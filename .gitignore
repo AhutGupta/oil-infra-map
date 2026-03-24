@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+env/
+
+# Data (large files / generated outputs — not committed)
+data/raw/*.geojson
+data/raw/*.csv
+data/raw/*.shp
+data/raw/*.gpkg
+data/processed/*.geojson
+data/tiles/*.pmtiles
+
+# Node / frontend build
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/public/tiles/*.pmtiles
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
