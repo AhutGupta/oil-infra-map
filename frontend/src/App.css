@@ -1,0 +1,102 @@
+/* ── Reset / base ──────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Full-screen layout ─────────────────────────────────────────────────── */
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+}
+
+.map-container {
+  position: absolute;
+  inset: 0;
+}
+
+/* ── Overlay panel ──────────────────────────────────────────────────────── */
+.overlay-panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 16px;
+  color: #f1f5f9;
+  min-width: 200px;
+  max-width: 240px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+.panel-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+  color: #e2e8f0;
+}
+
+/* ── Sections ───────────────────────────────────────────────────────────── */
+.panel-section {
+  margin-bottom: 14px;
+}
+
+.section-heading {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.hint {
+  font-size: 0.72rem;
+  color: #64748b;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+/* ── Checkboxes ─────────────────────────────────────────────────────────── */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 3px 0;
+  font-size: 0.82rem;
+}
+
+.checkbox-row input[type='checkbox'] {
+  accent-color: #60a5fa;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+/* ── Legend ─────────────────────────────────────────────────────────────── */
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 0.82rem;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
